@@ -1,0 +1,50 @@
+.Header {
+   @apply shadow-xl;
+    header {
+        @apply bg-white max-w-7xl m-auto;
+
+        nav {
+            @apply mx-auto flex max-w-full items-center justify-between p-6 lg:px-8;
+
+            .logo {
+                @apply flex lg:flex-1;
+
+                a {
+                    @apply -m-1.5 p-1.5;
+
+                    span {
+                        @apply sr-only;
+                    }
+
+                    img {
+                        @apply h-8 w-auto;
+                    }
+                }
+            }
+
+            .hamburger-menu {
+                @apply flex lg:hidden;
+
+                button {
+                    @apply -m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700;
+
+                    span {
+                        @apply sr-only;
+                    }
+
+                    .fa-bars {
+                        @apply h-6 w-6;
+                    }
+                }
+            }
+
+            .nav-items {
+                @apply hidden lg:flex lg:gap-x-12;
+
+                a {
+                    @apply text-sm font-semibold leading-6 text-gray-900;
+                }
+            }
+        }
+    }
+}

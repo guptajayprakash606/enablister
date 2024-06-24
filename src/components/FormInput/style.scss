@@ -1,0 +1,13 @@
+.FormInput{
+    @apply mb-4;
+
+    label{
+        @apply block mb-2 text-black;
+    }
+    input{
+        @apply w-full px-3 rounded-sm border border-gray-300 h-12 text-black shadow-sm;
+        &:focus{
+            @apply border border-gray-600 shadow-none outline-none;
+        }
+    }
+}

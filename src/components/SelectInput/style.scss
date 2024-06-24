@@ -1,0 +1,17 @@
+.SelectInput{
+    @apply mb-4 flex ;
+    flex-direction: column ;
+    label{
+        @apply block mb-2 text-black;
+    }
+    .options{
+        @apply border border-gray-300 px-2 h-12 text-black shadow-sm;
+        box-shadow: none;
+        outline: none;
+        &:focus{
+            @apply border border-gray-600;
+            box-shadow: none;
+        }
+    }
+    
+}
